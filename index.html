@@ -1,0 +1,197 @@
+﻿index.html
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Обучения от Мраки</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">Обучения от Мраки</div>
+  <nav>
+    <a href="#" id="homeBtn">Главная</a>
+    <a href="#" data-popup="osint">OSINT</a>
+    <a href="#" data-popup="tools">Инструменты</a>
+    <a href="#" data-popup="anon">Анонимность</a>
+    <a href="#" data-popup="disclaimer">Дисклеймер</a>
+  </nav>
+</header>
+
+<div class="bg-tree">🎄</div>
+
+<main class="hero" id="home">
+  <div class="left" id="leftContent">
+    <p class="author">Автор: Мрака Калашников</p>
+    <h1>Полное руководство по OSINT,<br>деанонимизации и цифровой безопасности</h1>
+    <button class="btn" id="startBtn">Начать обучение</button>
+  </div>
+
+  <div class="right">
+    <div class="terminal">
+      <div class="terminal-header">terminal @klshmraka</div>
+      <div class="terminal-body">
+        <p><span class="green">$</span> whoami</p>
+        <p>OSINT-исследователь</p><br>
+        <p><span class="green">$</span> info</p>
+        <p>Обучающий проект</p>
+        <p>Цифровая безопасность</p>
+        <p>OSINT практика</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <!-- СНЕГОВИК -->
+<div id="snowman">
+  <div class="snowman-head"></div>
+  <div class="snowman-body"></div>
+  <div class="snowman-base"></div>
+</div>
+
+<!-- ВЕТКИ НАВЧАННЯ -->
+<div id="learningBranches" class="branches">
+  <div class="branch" data-popup="sherlock">Абуз Шерлока</div>
+
+  <div class="branch" data-popup="fanstat">Абуз Фанстата</div>
+
+  <div class="branch" data-popup="socmint">Socmint</div>
+
+  <div class="branch" data-popup="terms">Термины</div>
+
+</div>
+
+<!-- POPUPS -->
+<div class="popup" id="anon">
+  <h3>Анонимность</h3>
+  <p>Анонимность в Telegram — это набор функций для защиты личных данных и скрытия личности, включая секретные чаты с end-to-end шифрованием, автоудалением и запретом пересылки.</p>
+</div>
+
+<div class="popup" id="osint">
+  <h3>OSINT</h3>
+  <p>
+<b>Сервисы для пробива</b><br><br>
+Реальные OSINT-инженеры не обходятся одними лишь ботами в телеге.<br><br>
+Список топовых сервисов:<br>
+<b>Пробив по лицу:</b><br>
+— http://betaface.com/demo_old.html<br>
+— https://search4faces.com<br><br>
+<b>Пробив по IP:</b><br>
+— http://spys.ru/<br>
+— https://check-host.net<br>
+— https://iknowwhatyoudownload.com/ru/peer/<br><br>
+<b>Пробив по VK:</b><br>
+— http://220vk.com<br>
+— https://rulait.github.io/vk-friends-saver<br>
+— https://namechk.com/<br><br>
+Вот это уже реальный OSINT. Потихоньку собирайте базу.
+  </p>
+</div>
+
+<div class="popup" id="tools">
+  <h3>Инструменты</h3>
+  <p>
+1. AVinfoBot — соцсети, авто, недвижимость<br>
+2. getcontact.com — как записан номер<br>
+3. OffThisContactBot — утечки данных<br>
+4. truecaller.com — имя и оператор<br>
+5. spravnik.com — ФИО и адрес<br>
+6. m.ok.ru — email и номер<br>
+7. smartsearchbot.com — ФИО и объявления<br>
+8. list-org.com — организации РФ<br>
+9. odyssey-search.info — Авито, авто, документы<br>
+10. find-org.com — компании РФ<br>
+11. SaveRuData — адрес, имя, заказы еды<br>
+12. x-ray.contact — утечки (VPN)<br>
+13. bbro.su — аккаунты Авито
+  </p>
+</div>
+
+<div class="popup" id="disclaimer">
+  <h3>⚠️ Дисклеймер</h3>
+  <p>
+Вся информация на сайте предоставляется только в образовательных целях.<br>
+Автор не несет ответственности за использование материалов.<br>
+Используя сайт, вы берете всю ответственность на себя.
+  </p>
+</div>
+
+<script src="script.js"></script>
+<script src="snow.js"></script>
+</body>
+</html>
+<div class="popup" id="sherlock">
+  <h3>Абуз Шерлока</h3>
+  <p>
+1. Создаем зеркало<br>
+2. Создаем реф ссылку<br>
+3. Заходим на фп и берем накрутку бота где сессии нажимают /start и вводят какой то запрос (спрашивайте у продавца)<br>
+4. Кидаем ему линк на реф и просим чтобы сессии ввели +79009009090
+  </p>
+</div>
+<div class="popup" id="fanstat">
+  <h3>Абуз Фанстата</h3>
+  <p>
+1. Заходите в тг бота который даёт вам ссылки на беседы — @parseedd_bot<br>
+2. Выбираете чаты и т.д<br>
+3. Заходите в любую беседу, далее пишите любое слово на английском языке!<br>
+4. Далее вам приходит файл в формате TXT, копируете от туда полностью всё, далее вставляете всё в бота FanStat — @fanstatbot_robot<br>
+5. Отвечу на данный вопрос "какое же ключево слово?" ключевого слова нету! подходят только английские слова разного вида! Вводите только не очевидные слова! а то все очевидные слова в формате hello, home и тд уже использовали!<br>
+6. Если вы всё сделали правильно то в течении 10–20 минут вам придут кристаллы
+  </p>
+</div>
+<div class="popup" id="socmint">
+  <h3>Socmint</h3>
+  <p>
+<b>Поиск в соцсетях</b><br><br>
+
+<b>Инструменты для анализа социальных сетей:</b><br><br>
+
+• social-searcher.com — Поиск по ключевым словам в соцсетях<br>
+• twitonomy.com — Анализирует активность в Twitter<br>
+• followerwonk.com — Анализирует профили Twitter<br>
+• stalkscan.com — Находит публичные данные профилей Facebook<br>
+• instaloader.github.io — Скачивает данные из Instagram
+  </p>
+</div>
+<div class="popup" id="terms">
+  <h3>Термины</h3>
+  <p>
+<b>Список принятых сокращений:</b><br><br>
+АБД - Администратор базы данных
+БД - база данных
+БНД - банки данных
+BT вычислительная техника
+ИС - информационная система
+ИБ - информационная безопасность
+ИЛМ - информационно-логическая модель
+ООСУБД - объектно-ориентированная система управления ба-
+зами данных
+ОС - операционная система
+по программное обеспечение
+СУБД система управления базами данных
+AES - Advanced Encryption Standard
+ANSI American National Standards Institute
+DBTG - Data Base Task Group
+DDL - Data Definition Language
+DES - Data Encryption Standard
+DML - Data Manipulation Language
+DOM - Document Object Model
+GUI - Graphical User Interface
+HTML - Hyper Text Markup Language
+IDEA - International Data Encryption Algorithm
+ISO - International Organization for Standardization
+MD5 Message Digest 5
+NIST - National Institute of Standards and Technology
+ODBC Open Database Connectivity
+SAX Simple API for XML
+SGML - Standard Generalized Markup Language
+SHA Secure Hashing Algorithm
+SPARC - Standards Planning And Requirements Committee
+SQL Structured Query Language
+SSL Secure Sockets Layer
+W3C World Wide Web Consortium
+XML Extensible Markup Language
+XPath - XML Path Language
+XSD Xml Schema Definition
